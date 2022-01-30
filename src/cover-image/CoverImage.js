@@ -1,5 +1,5 @@
 import classes from './CoverImage.module.css';
-import CovImg from './photo-1477617722074-45613a51bf6d.jpg';
+import CovImg from './blacklock_list.jpg';
 const CoverImage=(props)=>{
     return (
         <div className={classes.CovImg}>
