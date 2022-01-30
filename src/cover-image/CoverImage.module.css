@@ -1,0 +1,53 @@
+.covimg{
+    position: relative;
+    width: 50%;
+}
+
+.covcontent{
+    text-align: center;
+    animation: divv-appear  2s ease-out forwards;
+    margin-top: 350px;
+    margin-left: 500px;
+    position: absolute;
+}
+.covcontent button{
+  margin-left: 50px;
+}
+h1{
+    color: white;
+    font-size: 50px;
+}
+
+button{
+    background-color: rgb(19, 22, 196);
+    color: white;
+    font-size:25px;
+    font-weight: bold;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px; 
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgba(19, 22, 196,0.5);
+}
+
+@keyframes divv-appear {
+    from {
+      opacity: 0;
+      transform: translateY(5rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .covimg {
+      left: calc(50% - 20rem);
+      width: 40rem;
+    }
+  }
