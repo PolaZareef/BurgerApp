@@ -1,7 +1,10 @@
 import React from "react";
+import { btnClickActions } from "../store/TotalOrderClick-Slice";
 import Card from "../UI/Card";
 import BurgerItems from "./BurgerItems";
 import classes from './BurgerList.module.css';
+import { useDispatch } from "react-redux";
+import {useSelector} from 'react-redux';
 
 const Dummy_Burger=[
     {
@@ -31,25 +34,34 @@ const Dummy_Burger=[
 ];
 
 const BurgerList=()=>{
+    const dispatch=useDispatch();
+    const cartQuantity=useSelector(state=>state.cartsl.totalQuantity);
 
+    const toggleCartHandler=()=>{
+        dispatch(btnClickActions.toggle());
+    };
     const BurgersMenu=Dummy_Burger.map((item)=>(
         <BurgerItems
             id={item.id}
             key={item.id}
             name={item.name}
             description={item.description}
-            price={item.price + '$'}
+            price={item.price}
         />
     ));
-
     return (
         <div>
             <div className={classes.meals} id="menu">
             <h1 >THE MENU</h1>
                 <Card >
                     <ul>{BurgersMenu}</ul>
+                    <button className={classes.button} onClick={toggleCartHandler}>
+                    <span>Total Order</span>
+                    <span className={classes.badge}>{cartQuantity}</span>
+                    </button>
                 </Card>
             </div>
+            
         </div>
     )
 };

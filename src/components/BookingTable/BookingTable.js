@@ -1,7 +1,7 @@
 import ErrorModal from '../ErrorModal';
 import Card from '../UI/Card';
 import classes from './BookingTable.module.css';
-import react,{useState} from 'react';
+import {useState} from 'react';
 const BookingTable =()=>{
 
     const [error, setError] = useState();
@@ -73,6 +73,7 @@ const BookingTable =()=>{
                             id='Adults'
                             min='1'
                             max='5'
+                            placeholder='1'
                             onChange={CheckAduHandler}
                         />
                     </div>
@@ -83,6 +84,7 @@ const BookingTable =()=>{
                             id='Adults'
                             min='1'
                             max='5'
+                            placeholder='1'
                             onChange={CheckKidsHandler}
                         />
                     </div>

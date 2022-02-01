@@ -20,7 +20,7 @@ const Header =(props)=>{
                         <a href="#booking">Booking</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>

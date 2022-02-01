@@ -1,11 +1,18 @@
-.booking {
-    max-width: 60rem;
-    width: 90%;
-    margin: 2rem auto;
+.contact {
+    max-width: 110rem;
+    width: 100%;
     animation: meals-appear 2s ease-out forwards;
     text-align: center;
     font-size: 1.25rem;
 
+  }
+  .colo{
+      background-color: rgb(2, 34, 43);
+      color: white;
+  }
+  h1{
+      text-align: center;
+      padding-right: 60px;
   }
 
   .control {
@@ -14,7 +21,7 @@
   
   .control label {
     display: block;
-    color: black;
+    color: white;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
@@ -26,7 +33,7 @@
     border-radius: 4px;
     padding: 0.50rem;
     border: 1px solid black;
-    margin-left: 290px;
+    margin-left: 650px;
   }
   
 

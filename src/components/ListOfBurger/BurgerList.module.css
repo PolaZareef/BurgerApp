@@ -13,6 +13,28 @@ h1{
     margin: 0;
     padding: 0;
   }
+  .button {
+    background-color: rgb(8, 122, 151);
+    color: black;
+    margin-left: 250px;
+  }
+  
+  .button:hover,
+  .button:active {
+    color: white;
+  }
+  
+  .button span {
+    margin: 0 0.5rem;
+  }
+  
+  .badge {
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 0.15rem 1.25rem;
+    color: #1d1d1d;
+  }
+  
   
   @keyframes meals-appear {
     from {

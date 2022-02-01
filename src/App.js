@@ -5,11 +5,14 @@ import React,{useState} from 'react';
 import Header from './components/Header/Header';
 import TotalListofBurger from './components/ListOfBurger/TotalListofBurger';
 import BookingTable from './components/BookingTable/BookingTable';
+import AppContactFooter from './components/appContactFooter/appContactFooter';
+import OrderCart from './components/OrderCart/OrderCart';
+import {useSelector} from 'react-redux';
 
 function App() {
   const [GoToLoggIn,setGoToLoogIn]=useState(true);
   const [AfterLogged,setAfterLogged]=useState(true);
-
+  const showCart=useSelector(state=>state.btn.cartIsShown);
 
   const LoggInHandler=()=>{
       setGoToLoogIn(false);
@@ -29,7 +32,9 @@ function App() {
       {!GoToLoggIn &&<Header GoToHome={GoToHomeHandler}/>}
       {!GoToLoggIn &&<Login afterLoggInEvent={onafterLoggInEvent}/>}
       {!AfterLogged &&<TotalListofBurger/>}
+      {showCart &&<OrderCart/>}
       {!AfterLogged &&<BookingTable/>}
+      {!AfterLogged &&<AppContactFooter/>}
     </div>
   );
 }
