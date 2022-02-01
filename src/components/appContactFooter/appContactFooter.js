@@ -50,7 +50,7 @@ const AppContactFooter=()=>{
                 <h1>Contact</h1>
                 <Card className={classes.colo}>
                     <div className={classes.control}>
-                        <label htmlFor='Email'>Email</label>
+                        <label htmlFor='Email'>User Name</label>
                         <input 
                             type='email'
                             id='email'

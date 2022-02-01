@@ -46,7 +46,7 @@ const Login =(props)=>{
             <section>
                 <form>
                 <div className={classes.control}>
-                    <label htmlFor='email'>Email</label>
+                    <label htmlFor='email'>User Name</label>
                     <input 
                         type='email'
                         id='email'
