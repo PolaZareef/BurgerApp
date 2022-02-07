@@ -8,11 +8,21 @@ import BookingTable from './components/BookingTable/BookingTable';
 import AppContactFooter from './components/appContactFooter/appContactFooter';
 import OrderCart from './components/OrderCart/OrderCart';
 import {useSelector} from 'react-redux';
+import {useEffect} from 'react';
 
 function App() {
   const [GoToLoggIn,setGoToLoogIn]=useState(true);
   const [AfterLogged,setAfterLogged]=useState(true);
   const showCart=useSelector(state=>state.btn.cartIsShown);
+
+  const cart=useSelector((state)=>state.cartsl);
+ 
+ /* useEffect(()=>{
+    fetch('https://burger-app-7b204-default-rtdb.firebaseio.com/cart.json',{
+      method:'PUT',
+      body:JSON.stringify(cart),
+    });
+  },[cart]);*/
 
   const LoggInHandler=()=>{
       setGoToLoogIn(false);
