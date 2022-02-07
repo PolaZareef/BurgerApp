@@ -34,7 +34,10 @@ h1{
     padding: 0.15rem 1.25rem;
     color: #1d1d1d;
   }
-  
+  @media only screen and (max-width: 600px) {
+    .meals {margin-left: 250px;}
+    .button{margin-left: 250px;}
+  }
   
   @keyframes meals-appear {
     from {

@@ -7,22 +7,31 @@ import TotalListofBurger from './components/ListOfBurger/TotalListofBurger';
 import BookingTable from './components/BookingTable/BookingTable';
 import AppContactFooter from './components/appContactFooter/appContactFooter';
 import OrderCart from './components/OrderCart/OrderCart';
-import {useSelector} from 'react-redux';
+import {useSelector,useDispatch} from 'react-redux';
 import {useEffect} from 'react';
+import { btnClickActions } from './components/store/TotalOrderClick-Slice';
 
 function App() {
+  const dispatch=useDispatch();
   const [GoToLoggIn,setGoToLoogIn]=useState(true);
   const [AfterLogged,setAfterLogged]=useState(true);
   const showCart=useSelector(state=>state.btn.cartIsShown);
 
+
   const cart=useSelector((state)=>state.cartsl);
  
- /* useEffect(()=>{
-    fetch('https://burger-app-7b204-default-rtdb.firebaseio.com/cart.json',{
+  useEffect(async()=>{
+      const response=await fetch('https://burgers-app-ebb90-default-rtdb.firebaseio.com/cart.json',{
       method:'PUT',
       body:JSON.stringify(cart),
-    });
-  },[cart]);*/
+      });
+      if(!response.ok)
+      {
+        throw new Error('Sending Cart Data Failed');
+      }
+      /*const dataResponse= await response.json();
+      console.log(dataResponse);*/
+  },[cart]);
 
   const LoggInHandler=()=>{
       setGoToLoogIn(false);

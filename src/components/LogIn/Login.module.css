@@ -29,6 +29,9 @@
     padding: 0.25rem;
     border: 1px solid rgb(175, 171, 171);
   }
+  @media only screen and (max-width: 600px) {
+    .auth {margin-left: 200px;}
+  }
   
   @keyframes divv-appear {
     from {
