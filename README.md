@@ -28,9 +28,9 @@ You may also see any lint errors in the console.
 
 ## booking table:
       User can booking table into the restaurant by select start and end time that he need 
-      And number of kids and adults 
+      And number of kids and adults.
  
-##Deploying
+## Deploying:
       Commands for deploying website from firbase:
       ### `npm install -g firebase-tools`
       ### `firebase login`
