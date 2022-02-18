@@ -31,13 +31,13 @@ You may also see any lint errors in the console.
       And number of kids and adults.
  
 ## Deploying:
-      ### Commands for deploying website from firbase:
-         ### `npm install -g firebase-tools`
-         ### `firebase login`
-         ### `firebase init`
-         ### `firebase deploy`
-      ## Link for website Hosting:
-         [https://burgers-app-ebb90.web.app]
+   ## Commands for deploying website from firbase:
+   ### `npm install -g firebase-tools`
+   ### `firebase login`
+   ### `firebase init`
+   ### `firebase deploy`
+   ## Link for website Hosting:
+        [https://burgers-app-ebb90.web.app]
 
 
       
