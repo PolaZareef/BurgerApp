@@ -23,6 +23,9 @@
       width: 40rem;
     }
   }
+  @media only screen and (max-width: 600px) {
+    .summary {margin-left: 250px;}
+  }
 
   
 

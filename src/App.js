@@ -10,7 +10,10 @@ import OrderCart from './components/OrderCart/OrderCart';
 import {useSelector,useDispatch} from 'react-redux';
 import {useEffect} from 'react';
 import { btnClickActions } from './components/store/TotalOrderClick-Slice';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 00aa88019c1765b1c12372d7ceed56fe5da35cda
 
 function App() {
   const dispatch=useDispatch();
@@ -26,7 +29,16 @@ function App() {
       method:'PUT',
       body:JSON.stringify(cart),
       });
+<<<<<<< HEAD
       
+=======
+      if(!response.ok)
+      {
+        throw new Error('Sending Cart Data Failed');
+      }
+      /*const dataResponse= await response.json();
+      console.log(dataResponse);*/
+>>>>>>> 00aa88019c1765b1c12372d7ceed56fe5da35cda
   },[cart]);
 
   const LoggInHandler=()=>{
