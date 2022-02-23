@@ -2,6 +2,7 @@ import ErrorModal from '../ErrorModal';
 import Card from '../UI/Card';
 import classes from './BookingTable.module.css';
 import {useState} from 'react';
+import Slide from 'react-reveal/Slide';
 const BookingTable =()=>{
 
     const [error, setError] = useState();
@@ -40,6 +41,8 @@ const BookingTable =()=>{
         setError(null);
     };
 
+    
+
     return (
         <div>
             {error &&<ErrorModal 
@@ -47,6 +50,7 @@ const BookingTable =()=>{
                 message={error.message}
                 onConfirm={errorHandler}
             />}
+            <Slide left>
             <div className={classes.booking} id='booking'>
                 <h1>Booking Table</h1>
                 <Card>
@@ -88,9 +92,10 @@ const BookingTable =()=>{
                             onChange={CheckKidsHandler}
                         />
                     </div>
-                    <button type='submit' onClick={BookingHandler}>Booking</button>
+                    <button type='submit' className={classes.btnn} onClick={BookingHandler}>Booking</button>
                 </Card>
             </div>
+            </Slide>
         </div>
     )
 };

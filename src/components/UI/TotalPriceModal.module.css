@@ -6,6 +6,7 @@
     height: 100vh;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.75);
+
   }
   
   .modal {
@@ -15,25 +16,17 @@
     width: 80%;
     z-index: 1;
     overflow: hidden;
-    animation: mymove 0.3s;
+    animation: meals-appear 1s ease-out forwards;
 
   }
-  
-  
-  .header {
-    background: rgb(8, 122, 151);
-    padding: 1rem;
-  }
-  
-  .header h2 {
-    margin: 0;
-    color: white;
-  }
-  
+
   .content {
     padding: 1rem;
     background: white;
-    
+    font-size: large;
+    font-weight: bold;
+    font-family:cursive;
+    font-size: 25px;
 
   }
   
@@ -42,19 +35,23 @@
     display: flex;
     justify-content: flex-end;
     background: white;
-
   }
 
-  @keyframes mymove {
-    0%   {top: 0px;}
-  25%  {top: 290px;}
-  75%  {top: 200px}
-  100% {top: 290px;}
-  }
-  
   @media (min-width: 1024px) {
     .modal {
       left: calc(50% - 20rem);
       width: 40rem;
+    }
+  }
+
+  @keyframes meals-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }

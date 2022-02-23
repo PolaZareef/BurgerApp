@@ -1,6 +1,9 @@
 import classes from './BurgerSummary.module.css';
+import Slide from 'react-reveal/Slide';
+
 const BurgerSummary =()=>{
     return (
+        <Slide left>
         <div className={classes.summary}>
             <h2>Delicious Food, Delivered To You</h2>
             <p>
@@ -12,6 +15,7 @@ const BurgerSummary =()=>{
                 of course by experienced chefs!
             </p>
         </div>
+        </Slide>
     )
 };
 

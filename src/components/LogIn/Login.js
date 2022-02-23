@@ -63,7 +63,7 @@ const Login =(props)=>{
                         onChange={enteredPasswordHandler}
                     />
                 </div>
-                <button onClick={onLoggedInHandler}>Login</button>
+                <button className={classes.butt} onClick={onLoggedInHandler}>Login</button>
                 </form>
             </section>
             </main>}

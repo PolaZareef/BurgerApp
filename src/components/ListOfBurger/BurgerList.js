@@ -5,6 +5,8 @@ import BurgerItems from "./BurgerItems";
 import classes from './BurgerList.module.css';
 import { useDispatch } from "react-redux";
 import {useSelector} from 'react-redux';
+import Slide from 'react-reveal/Slide';
+
 
 const Dummy_Burger=[
     {
@@ -50,12 +52,13 @@ const BurgerList=()=>{
         />
     ));
     return (
+        <Slide left>
         <div>
             <div className={classes.meals} id="menu">
             <h1 >THE MENU</h1>
                 <Card >
                     <ul>{BurgersMenu}</ul>
-                    <button className={classes.button} onClick={toggleCartHandler}>
+                    <button className={classes.btnnn} onClick={toggleCartHandler} >
                     <span>Total Order</span>
                     <span className={classes.badge}>{cartQuantity}</span>
                     </button>
@@ -63,6 +66,7 @@ const BurgerList=()=>{
             </div>
             
         </div>
+        </Slide>
     )
 };
 export default BurgerList;

@@ -76,7 +76,7 @@ const AppContactFooter=()=>{
                             onChange={MessageHandler}
                         />
                     </div>
-                    <button type='submit' onClick={BookingHandler}>Send Message</button>
+                    <button className={classes.butt} type='submit' onClick={BookingHandler}>Send Message</button>
                 </Card>
             </div>
         </div>

@@ -22,7 +22,7 @@ const OrderCartItem =(props)=>{
             <header>
                 <h3>{name}</h3>
                 <div className={classes.price}>
-                    ${total}{' '}
+                    ${total.toFixed(2)}{' '}
                     <span className={classes.itemprice}>(${price}/item)</span>
                 </div>
             </header>

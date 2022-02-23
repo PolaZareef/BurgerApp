@@ -7,10 +7,7 @@ import { createSlice } from "@reduxjs/toolkit";
         totalQuantity:0
     },
     reducers:{
-        replaceCart(state, action) {
-            state.totalQuantity = action.payload.totalQuantity;
-            state.items = action.payload.items;
-          },
+       
         addItemToCart(state,action){
             const newItem =action.payload;
             const existItem=state.items.find(item=>item.id===newItem.id);

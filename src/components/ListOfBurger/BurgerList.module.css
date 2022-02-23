@@ -13,18 +13,18 @@ h1{
     margin: 0;
     padding: 0;
   }
-  .button {
+  .btnnn {
     background-color: rgb(8, 122, 151);
     color: black;
     margin-left: 250px;
   }
   
-  .button:hover,
-  .button:active {
+  .btnnn:hover,
+  .btnnn:active {
     color: white;
   }
   
-  .button span {
+  .btnnn span {
     margin: 0 0.5rem;
   }
   
@@ -34,7 +34,15 @@ h1{
     padding: 0.15rem 1.25rem;
     color: #1d1d1d;
   }
-  
+  @media only screen and (max-width: 480px) {
+    .meals {
+      margin-left: 70px;
+      width: 40rem;
+    }
+    .btnnn{
+      margin-left: 250px;
+    }
+  }
   
   @keyframes meals-appear {
     from {

@@ -24,7 +24,7 @@
     color: white;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
+    margin: auto;
   }
   
   .control input {
@@ -33,7 +33,29 @@
     border-radius: 4px;
     padding: 0.50rem;
     border: 1px solid black;
-    margin-left: 650px;
+    margin:auto;
+  }
+  .butt{
+    transition: all 0.3s;
+    box-shadow: 0px 5px 10px rgba(darken(dodgerblue, 60%));
+  }
+  .butt:hover{
+    box-shadow: 0px 15px 25px -5px rgba(darken(dodgerblue, 40%));
+    transform: scale(1.03);
+  }
+  .butt:active{
+    box-shadow: 0px 4px 8px rgba(darken(dodgerblue, 30%));
+    transform: scale(0.98);
+  }
+
+  @media only screen and (max-width: 480px) {
+    .contact {
+      margin-left: 70px;
+      width: 40rem;
+    }
+    .btnn{
+      margin-left: auto;
+    }
   }
   
 
