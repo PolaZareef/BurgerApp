@@ -42,15 +42,12 @@
     padding: 0.25rem;
     border: 1px solid rgb(175, 171, 171);
   }
-<<<<<<< HEAD
   @media only screen and (max-width: 480px) {
     .auth {
       margin-left:200px;
     }
-=======
   @media only screen and (max-width: 600px) {
     .auth {margin-left: 200px;}
->>>>>>> 00aa88019c1765b1c12372d7ceed56fe5da35cda
   }
   
   @keyframes divv-appear {
@@ -63,4 +60,4 @@
       opacity: 1;
       transform: translateY(0);
     }
-  }
+  }}
