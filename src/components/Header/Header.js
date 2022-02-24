@@ -29,31 +29,7 @@ const Header =(props)=>{
                     </li>
                 </ul>
             </nav>
-        </div>
-
-        
-            /*<Navbar>
-                <Navbar.Header>
-                    <Navbar.Brand>
-                    <a href="#home" >King Of Burger</a>
-                    </Navbar.Brand>
-                </Navbar.Header>
-                <Nav pullRight>
-                    <NavItem eventKey={1} href="#home" onClick={GoHome} >
-                    Home
-                    </NavItem>
-                    <NavItem eventKey={2} href="#menu">
-                    Menu
-                    </NavItem>
-                    <NavItem eventKey={2} href="#booking">
-                    Booking
-                    </NavItem>
-                    <NavItem eventKey={2} href="#contact">
-                    Contact
-                    </NavItem>
-                </Nav>
-            </Navbar>*/
-        
+        </div>        
     )
 };
 export default Header;

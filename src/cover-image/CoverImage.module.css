@@ -5,7 +5,6 @@
 
 .covcontent{
     text-align: center;
-    animation: divv-appear  2s ease-out forwards;
     margin-top: 350px;
     margin-left: 500px;
     position: absolute;
@@ -48,16 +47,6 @@ button:hover{
 }
 
 
-@keyframes divv-appear {
-    from {
-      opacity: 0;
-      transform: translateY(5rem);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+
 
   

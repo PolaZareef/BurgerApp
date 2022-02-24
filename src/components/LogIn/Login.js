@@ -1,6 +1,8 @@
 import classes from './Login.module.css';
 import React,{useState} from 'react';
 import ErrorModal from '../ErrorModal';
+import Fade from 'react-reveal/Fade';
+
 const Login =(props)=>{
     const[enterdEmail,setEnteredEmail]=useState('');
     const[enterdPassword,setEnteredPassword]=useState('');
@@ -42,6 +44,7 @@ const Login =(props)=>{
                 message={error.message}
                 onConfirm={errorHandler}
             />}
+            <Fade bottom>
             {AfterLogged &&<main className={classes.auth}>
             <section>
                 <form>
@@ -67,6 +70,7 @@ const Login =(props)=>{
                 </form>
             </section>
             </main>}
+            </Fade>
     </div>
       );
 };
