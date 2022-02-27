@@ -45,12 +45,21 @@
     margin-right: 50px;
   }
   
+  
+  
   .header a:hover,
   .header a:active {
     color: #210ae9;
     transition: all 0.2s ease-in;
 
   }
+  .header a:hover .drp{
+    display: block;
+  }
+  .drp{
+    display: none;
+  }
+
   @media only screen and (max-width: 480px) {
     .header {
       width: 50rem;

@@ -1,0 +1,52 @@
+.imgg{
+    max-width: 300px;
+    margin-left: 40px;
+    display: block;
+    
+}
+.marg{
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+h1{
+    margin-bottom: 30px;
+}
+h4{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 300px;
+    margin-left: 40px;
+    margin-bottom: 0;
+    padding: 8px;
+    text-align: center;
+    position:absolute;    
+
+}
+.colDiv:hover{
+    cursor: pointer;
+    animation: mymove 1s ;
+}
+.colDiv{
+    display: inline;
+    max-width: 400px;
+    margin-left: 15px;
+
+}
+
+.borderr{
+    border-radius: 5px;
+}
+@keyframes mymove {
+    0% {
+        transform: scale(1, 1);
+      }
+      50% {
+        transform: scale(1.1, 1.1);
+      }
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+
+

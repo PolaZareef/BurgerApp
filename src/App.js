@@ -10,6 +10,7 @@ import OrderCart from './components/OrderCart/OrderCart';
 import {useSelector,useDispatch} from 'react-redux';
 import {useEffect} from 'react';
 import { btnClickActions } from './components/store/TotalOrderClick-Slice';
+import MealsImages from './components/MealsImages/MealsImages';
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
       {!GoToLoggIn &&<Login afterLoggInEvent={onafterLoggInEvent}/>}
       {!AfterLogged &&<TotalListofBurger/>}
       {showCart &&<OrderCart/>}
+      {!AfterLogged &&<MealsImages/>}
       {!AfterLogged &&<BookingTable/>}
       {!AfterLogged &&<AppContactFooter/>}
     </div>
