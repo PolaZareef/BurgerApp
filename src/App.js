@@ -21,7 +21,7 @@ function App() {
 
 
   const cart=useSelector((state)=>state.cartsl);
- 
+ /////////////////////////////////Featch Data to FireBase////////////////////////////////////////////////
   useEffect(async()=>{
       const response=await fetch('https://burgers-app-ebb90-default-rtdb.firebaseio.com/cart.json',{
       method:'PUT',
@@ -35,7 +35,7 @@ function App() {
       /*const dataResponse= await response.json();
       console.log(dataResponse);*/
   },[cart]);
-
+////////////////////////////////////////////////////////////////////////////////////
   const LoggInHandler=()=>{
       setGoToLoogIn(false);
   };
@@ -48,6 +48,26 @@ function App() {
     setAfterLogged(true);
   };
 
+///////////////////////Button to Scroll The Page to Top/////////////////////////////////
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' 
+    });
+  };
+////////////////////////////////////////////////////////////////////
   return (
     <div>
       {GoToLoggIn &&<CoverImage LoggIn={LoggInHandler} />}
@@ -58,6 +78,11 @@ function App() {
       {!AfterLogged &&<MealsImages/>}
       {!AfterLogged &&<BookingTable/>}
       {!AfterLogged &&<AppContactFooter/>}
+      {showButton && (
+        <button onClick={scrollToTop} className="back-to-top">
+          &#8679;
+        </button>
+      )}
     </div>
   );
 }
