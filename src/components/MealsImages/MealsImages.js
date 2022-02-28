@@ -4,8 +4,6 @@ import Secimg from './steak.jpg';
 import Thirdimg from './salmon.jpg';
 import Fourthimg from './wine.jpg';
 import Slide from 'react-reveal/Slide';
-import Fade from 'react-reveal/Fade';
-import Card from '../UI/Card';
 
 const MealsImages =()=>{
     return (

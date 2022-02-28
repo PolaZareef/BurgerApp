@@ -7,16 +7,17 @@ import TotalListofBurger from './components/ListOfBurger/TotalListofBurger';
 import BookingTable from './components/BookingTable/BookingTable';
 import AppContactFooter from './components/appContactFooter/appContactFooter';
 import OrderCart from './components/OrderCart/OrderCart';
-import {useSelector,useDispatch} from 'react-redux';
+import {useSelector} from 'react-redux';
 import {useEffect} from 'react';
-import { btnClickActions } from './components/store/TotalOrderClick-Slice';
 import MealsImages from './components/MealsImages/MealsImages';
+import TotalFeedBacks from './components/ListOfFeedBack/TotalFeedBack';
 
 
 function App() {
-  const dispatch=useDispatch();
   const [GoToLoggIn,setGoToLoogIn]=useState(true);
   const [AfterLogged,setAfterLogged]=useState(true);
+  const [ShowFeedBack,setShowFeedBack]=useState(false);
+
   const showCart=useSelector(state=>state.btn.cartIsShown);
 
 
@@ -47,6 +48,9 @@ function App() {
     setGoToLoogIn(true);
     setAfterLogged(true);
   };
+  const ShowFeedbackHandler=()=>{
+    setShowFeedBack(!ShowFeedBack);
+  };
 
 ///////////////////////Button to Scroll The Page to Top/////////////////////////////////
   const [showButton, setShowButton] = useState(false);
@@ -70,6 +74,7 @@ function App() {
 ////////////////////////////////////////////////////////////////////
   return (
     <div>
+      {ShowFeedBack &&<TotalFeedBacks />}
       {GoToLoggIn &&<CoverImage LoggIn={LoggInHandler} />}
       {!GoToLoggIn &&<Header GoToHome={GoToHomeHandler}/>}
       {!GoToLoggIn &&<Login afterLoggInEvent={onafterLoggInEvent}/>}
@@ -83,6 +88,7 @@ function App() {
           &#8679;
         </button>
       )}
+      {!AfterLogged &&<button onClick={ShowFeedbackHandler} className="feedback">Add Your FeedBack</button>}
     </div>
   );
 }

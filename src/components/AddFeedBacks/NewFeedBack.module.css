@@ -1,0 +1,42 @@
+.newfeedback {
+    background-color: white;
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+
+    position: fixed;
+    z-index: 1;
+    margin-left:26% ;
+  }
+  
+  .newfeedback button {
+    font: inherit;
+    font-size: 30px;
+    cursor: pointer;
+    border: 1px solid rgb(8, 122, 151);
+    background-color: rgb(8, 122, 151);
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+  }
+  
+  .newfeedback button:hover,
+  .newfeedback button:active {
+    background-color: rgba(8, 122, 151,0.5);
+    border-color: rgba(8, 122, 151,0.5);
+  }
+  
+  .newfeedback button.alternative {
+    color: rgb(8, 122, 151);
+    border-color: transparent;
+    background-color: transparent;
+  }
+  
+  .newfeedback button.alternative:hover,
+  .newfeedback button.alternative:active {
+    background-color: rgb(8, 122, 151);
+  }

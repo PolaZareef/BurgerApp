@@ -4,9 +4,9 @@ h1{
 body{
   background-color: rgb(36, 35, 35);
 }
-.back-to-top {
+.back-to-top, .feedback {
   position: fixed;
-  bottom: 40px;
+  bottom: 50px;
   right: 100px;
   font-size: 50px;
   background: rgb(8, 122, 151);
@@ -17,6 +17,13 @@ body{
   box-shadow: 0 5px 10px #ccc;
   width: 100px;
   padding-bottom: 90px;
+}
+.feedback{
+  bottom: 50px;
+  left: 80px;
+  width: 250px;
+  font-size: 20px;
+  padding-bottom: 0;
 }
 
 .back-to-top:hover {
