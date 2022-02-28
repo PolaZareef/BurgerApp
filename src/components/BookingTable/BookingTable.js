@@ -3,6 +3,7 @@ import Card from '../UI/Card';
 import classes from './BookingTable.module.css';
 import {useState} from 'react';
 import Slide from 'react-reveal/Slide';
+import TotalPriceModal from '../UI/TotalPriceModal';
 const BookingTable =()=>{
 
     const [error, setError] = useState();
@@ -10,6 +11,8 @@ const BookingTable =()=>{
     const [CheckOut,setCheckOut]=useState('');
     const [CheckAdults,setCheckAdults]=useState('');
     const [CheckKids,setCheckKids]=useState('');
+    const [TotalModal, setTotalModal] = useState();
+
 
     const CheckInahndler=(event)=>{
         setCheckIn(event.target.value);
@@ -35,10 +38,16 @@ const BookingTable =()=>{
             })
             return;
         }
-        alert('BOOKING SUCCESSFULL...')
+        setTotalModal({
+            message: "BOOKING SUCCESSFULL..." 
+        })        
     };
     const errorHandler=()=>{
         setError(null);
+    };
+
+    const TotalNullHandler=()=>{
+        setTotalModal(null);
     };
 
     
@@ -49,6 +58,11 @@ const BookingTable =()=>{
                 title={error.title}
                 message={error.message}
                 onConfirm={errorHandler}
+            />}
+            {TotalModal &&
+            <TotalPriceModal
+                 message={TotalModal.message}
+                onConfirm={TotalNullHandler}
             />}
             <Slide left>
             <div className={classes.booking} id='booking'>

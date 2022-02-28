@@ -14,7 +14,7 @@ const DUMMY_FEEDBACKS = [
      },
 ];
 
-const TotalFeedBacks=()=>{
+const TotalFeedBacks=(props)=>{
     const [feedbacks, setFeedBacks] = useState(DUMMY_FEEDBACKS);
     const AddFeedBackHandler=(feedbak)=>{
         setFeedBacks((prevFeedBacks)=>{
@@ -24,7 +24,7 @@ const TotalFeedBacks=()=>{
     return(
         <div>
             <NewFeedBack onAddFeedBack={AddFeedBackHandler}/>
-            <FeedBacksList items={feedbacks} />
+            <FeedBacksList items={feedbacks} onDoneFeed={props.onDoneFeedbak}/>
         </div>
     )
 

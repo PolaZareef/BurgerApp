@@ -10,6 +10,8 @@
   .cart h2 {
     font-size: 1.25rem;
     margin: 0.5rem 0;
+    color: black;
+    font-weight: bold;
   }
   
   .cart ul {

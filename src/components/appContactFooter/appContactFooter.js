@@ -2,15 +2,16 @@ import classes from './appContactFooter.module.css';
 import ErrorModal from '../ErrorModal';
 import Card from '../UI/Card';
 import React,{useState} from 'react';
+import TotalPriceModal from '../UI/TotalPriceModal';
 
 const AppContactFooter=()=>{
     const [error, setError] = useState();
     const [CheckEmail,setCheckEmail]=useState('');
     const [CheckDescription,setCheckDescription]=useState('');
     const [CheckMessage,setCheckMessage]=useState('');
+    const [TotalModal, setTotalModal] = useState();
 
     
-
     const EmailHandler=(event)=>{
         setCheckEmail(event.target.value);
     };
@@ -33,10 +34,16 @@ const AppContactFooter=()=>{
             })
             return;
         }
-        alert('Thanks For Your FeedBack');
+        setTotalModal({
+            message: "Thanks For Your FeedBack..." 
+        })  
     };
     const errorHandler=()=>{
         setError(null);
+    };
+
+    const TotalNullHandler=()=>{
+        setTotalModal(null);
     };
 
     return (
@@ -45,6 +52,11 @@ const AppContactFooter=()=>{
                 title={error.title}
                 message={error.message}
                 onConfirm={errorHandler}
+            />}
+            {TotalModal &&
+            <TotalPriceModal
+                 message={TotalModal.message}
+                onConfirm={TotalNullHandler}
             />}
             <div className={classes.contact} id='contact'>
                 <h1>Contact</h1>

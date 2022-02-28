@@ -7,6 +7,7 @@ import LightSpeed from 'react-reveal/LightSpeed';
 
 const FeedBacksList=(props)=>{
     return (
+        
         <LightSpeed left>
         <div className={classes.feedbacks}>
             <h2>List OF FeedBacks </h2>
@@ -19,6 +20,8 @@ const FeedBacksList=(props)=>{
                     />
                 ))}
             </Card>
+            <br/>
+            <button className={classes.bnn} onClick={props.onDoneFeed}>Done</button>
         </div>
         </LightSpeed>
     )

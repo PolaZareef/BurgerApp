@@ -51,6 +51,10 @@ function App() {
   const ShowFeedbackHandler=()=>{
     setShowFeedBack(!ShowFeedBack);
   };
+  const onD=()=>{
+    setShowFeedBack(!ShowFeedBack);
+  };
+
 
 ///////////////////////Button to Scroll The Page to Top/////////////////////////////////
   const [showButton, setShowButton] = useState(false);
@@ -74,7 +78,7 @@ function App() {
 ////////////////////////////////////////////////////////////////////
   return (
     <div>
-      {ShowFeedBack &&<TotalFeedBacks />}
+      {ShowFeedBack &&<TotalFeedBacks onDoneFeedbak={onD}/>}
       {GoToLoggIn &&<CoverImage LoggIn={LoggInHandler} />}
       {!GoToLoggIn &&<Header GoToHome={GoToHomeHandler}/>}
       {!GoToLoggIn &&<Login afterLoggInEvent={onafterLoggInEvent}/>}

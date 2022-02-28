@@ -16,6 +16,7 @@
   .newfeedback button {
     font: inherit;
     font-size: 30px;
+    font-weight: bold;
     cursor: pointer;
     border: 1px solid rgb(8, 122, 151);
     background-color: rgb(8, 122, 151);
