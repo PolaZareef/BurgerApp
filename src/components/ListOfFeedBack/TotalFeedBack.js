@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import NewFeedBack from '../AddFeedBacks/NewFeedBack';
 import FeedBacksList from './FeedBacksList';
+import classes from './Total.module.css';
 const DUMMY_FEEDBACKS = [
     {
       id: 'f1',
@@ -23,8 +24,12 @@ const TotalFeedBacks=(props)=>{
     };
     return(
         <div>
-            <NewFeedBack onAddFeedBack={AddFeedBackHandler}/>
-            <FeedBacksList items={feedbacks} onDoneFeed={props.onDoneFeedbak}/>
+            <div className={classes.backdropp} >
+                <div className={classes.modall}>
+                    <NewFeedBack onAddFeedBack={AddFeedBackHandler}/>
+                    <FeedBacksList items={feedbacks} onDoneFeed={props.onDoneFeedbak}/>
+                </div>
+            </div>
         </div>
     )
 

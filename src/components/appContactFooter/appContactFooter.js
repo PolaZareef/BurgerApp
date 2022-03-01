@@ -58,6 +58,8 @@ const AppContactFooter=()=>{
                  message={TotalModal.message}
                 onConfirm={TotalNullHandler}
             />}
+            
+            
             <div className={classes.contact} id='contact'>
                 <h1>Contact</h1>
                 <Card className={classes.colo}>

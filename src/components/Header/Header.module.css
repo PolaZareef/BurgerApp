@@ -11,6 +11,7 @@
   h1{
       padding-left:50px;
       font-weight: bold;
+      padding-top: 5px;
   }
   .butt{
     transition: all 0.3s;

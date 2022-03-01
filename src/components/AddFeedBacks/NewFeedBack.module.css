@@ -7,12 +7,17 @@
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
-
+    overflow: auto;
     position: fixed;
     z-index: 1;
     margin-left:26% ;
   }
-  
+  .back{
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow: auto;
+    position: fixed;
+    z-index: 1;
+  }
   .newfeedback button {
     font: inherit;
     font-size: 30px;

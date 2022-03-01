@@ -68,44 +68,44 @@ const BookingTable =()=>{
             <div className={classes.booking} id='booking'>
                 <h1>Booking Table</h1>
                 <Card>
-                    <div className={classes.control}>
-                        <label htmlFor='CheckIn'>Check In</label>
-                        <input 
-                            type='time'
-                            id='CheckIn'
-                            onChange={CheckInahndler}
-                        />
-                    </div>
-                    <div className={classes.control}>
-                        <label htmlFor='CheckOut'>Check Out</label>
-                        <input 
-                            type='time'
-                            id='CheckOut'
-                            onChange={CheckOutHandler}
-                        />
-                    </div>
-                    <div className={classes.control}>
-                        <label htmlFor='Adults'>Adults</label>
-                        <input 
-                            type='number'
-                            id='Adults'
-                            min='1'
-                            max='5'
-                            placeholder='1'
-                            onChange={CheckAduHandler}
-                        />
-                    </div>
-                    <div className={classes.control}>
-                        <label htmlFor='Kids'>Kids</label>
-                        <input 
-                            type='number'
-                            id='Adults'
-                            min='1'
-                            max='5'
-                            placeholder='1'
-                            onChange={CheckKidsHandler}
-                        />
-                    </div>
+                        <div className={classes.control} >
+                            <label htmlFor='CheckIn'>Check In</label>
+                            <input 
+                                type='time'
+                                id='CheckIn'
+                                onChange={CheckInahndler}
+                            />
+                        </div>
+                        <div className={classes.control} >
+                            <label htmlFor='CheckOut'>Check Out</label>
+                            <input 
+                                type='time'
+                                id='CheckOut'
+                                onChange={CheckOutHandler}
+                            />
+                        </div>
+                        <div className={classes.control} >
+                            <label htmlFor='Adults'>Adults</label>
+                            <input 
+                                type='number'
+                                id='Adults'
+                                min='1'
+                                max='5'
+                                placeholder='1'
+                                onChange={CheckAduHandler}
+                            />
+                        </div>
+                        <div className={classes.control} >
+                            <label htmlFor='Kids'>Kids</label>
+                            <input 
+                                type='number'
+                                id='Adults'
+                                min='1'
+                                max='5'
+                                placeholder='1'
+                                onChange={CheckKidsHandler}
+                            />
+                        </div>
                     <button type='submit' className={classes.btnn} onClick={BookingHandler}>Booking</button>
                 </Card>
             </div>

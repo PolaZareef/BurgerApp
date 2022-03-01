@@ -13,11 +13,13 @@ const NewFeedBack =(props)=>{
     };
 
     return (
+        <div className={classes.back}>
         <LightSpeed right>
         <div className={classes.newfeedback}>
             <NewFeedBackForm onSaveFeedBackData={FeedBackDataHandler}/>
         </div>
         </LightSpeed>
+        </div>
     )
 };
 export default NewFeedBack;

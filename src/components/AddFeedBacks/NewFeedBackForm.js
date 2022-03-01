@@ -1,5 +1,5 @@
 import classes from './NewFeedBackForm.module.css';
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 
 const NewFeedBackForm=(props)=>{
     const [enteredName, setEnteredName] = useState('');
@@ -12,9 +12,14 @@ const NewFeedBackForm=(props)=>{
     const FeedBackChangeHandler=(event)=>{
         setEnteredFeedBack(event.target.value);
     };
-
     const submitHandler=(event)=>{
         event.preventDefault();
+        if(enteredName.trim().length===0 || enteredFeedBack.trim().length===0)
+        {
+            alert('Please Fill All FeedBack Data...');
+             return;
+        }
+        
         const FeedBackData = {
             name: enteredName,
             feedback: enteredFeedBack,

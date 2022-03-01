@@ -8,7 +8,7 @@ const FeedBackItem=(props)=>{
             <div>
             </div>
             <div className={classes.feedbackitemname}>
-                <p>{props.name}</p><br/>
+                <p>{props.name}</p>
                 <div className={classes.feedbackitemfeedbacks}>{props.feedback}</div>
             </div>
         </Card>

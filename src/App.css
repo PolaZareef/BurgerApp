@@ -17,6 +17,7 @@ body{
   box-shadow: 0 5px 10px #ccc;
   width: 100px;
   padding-bottom: 90px;
+
 }
 .feedback{
   bottom: 50px;
@@ -29,3 +30,10 @@ body{
 .back-to-top:hover {
   background: rgba(8, 122, 151,0.5);
 }
+/*@keyframes mymove {
+  0%   {top: 0px;}
+25%  {top: 290px;}
+75%  {top: 200px}
+100% {top: 290px;}
+}*/
+
