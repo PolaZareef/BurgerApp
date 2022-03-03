@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/PolaZareef/BurgerApp.git/static/css/main.0314d847.css",
+    "main.js": "/PolaZareef/BurgerApp.git/static/js/main.9171e2fd.js",
+    "static/js/787.28cb0dcd.chunk.js": "/PolaZareef/BurgerApp.git/static/js/787.28cb0dcd.chunk.js",
+    "static/media/blacklock_list.jpg": "/PolaZareef/BurgerApp.git/static/media/blacklock_list.fdd6fe9fcbc77c1a8f12.jpg",
+    "static/media/wine.jpg": "/PolaZareef/BurgerApp.git/static/media/wine.f385aa5175d23c02b9b5.jpg",
+    "static/media/salmon.jpg": "/PolaZareef/BurgerApp.git/static/media/salmon.b53f37e6551f124294f7.jpg",
+    "static/media/steak.jpg": "/PolaZareef/BurgerApp.git/static/media/steak.884245d345083526bd03.jpg",
+    "static/media/sandwich.jpg": "/PolaZareef/BurgerApp.git/static/media/sandwich.070d2a53863bbf2bcb1b.jpg",
+    "index.html": "/PolaZareef/BurgerApp.git/index.html",
+    "main.0314d847.css.map": "/PolaZareef/BurgerApp.git/static/css/main.0314d847.css.map",
+    "main.9171e2fd.js.map": "/PolaZareef/BurgerApp.git/static/js/main.9171e2fd.js.map",
+    "787.28cb0dcd.chunk.js.map": "/PolaZareef/BurgerApp.git/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0314d847.css",
+    "static/js/main.9171e2fd.js"
+  ]
+}
