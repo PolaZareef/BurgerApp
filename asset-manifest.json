@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.0314d847.css",
-    "main.js": "/static/js/main.ea222ccc.js",
-    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "static/media/blacklock_list.jpg": "/static/media/blacklock_list.fdd6fe9fcbc77c1a8f12.jpg",
-    "static/media/wine.jpg": "/static/media/wine.f385aa5175d23c02b9b5.jpg",
-    "static/media/salmon.jpg": "/static/media/salmon.b53f37e6551f124294f7.jpg",
-    "static/media/steak.jpg": "/static/media/steak.884245d345083526bd03.jpg",
-    "static/media/sandwich.jpg": "/static/media/sandwich.070d2a53863bbf2bcb1b.jpg",
-    "index.html": "/index.html",
-    "main.0314d847.css.map": "/static/css/main.0314d847.css.map",
-    "main.ea222ccc.js.map": "/static/js/main.ea222ccc.js.map",
-    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/BurgerApp/static/css/main.0314d847.css",
+    "main.js": "/BurgerApp/static/js/main.dd339ce5.js",
+    "static/js/787.28cb0dcd.chunk.js": "/BurgerApp/static/js/787.28cb0dcd.chunk.js",
+    "static/media/blacklock_list.jpg": "/BurgerApp/static/media/blacklock_list.fdd6fe9fcbc77c1a8f12.jpg",
+    "static/media/wine.jpg": "/BurgerApp/static/media/wine.f385aa5175d23c02b9b5.jpg",
+    "static/media/salmon.jpg": "/BurgerApp/static/media/salmon.b53f37e6551f124294f7.jpg",
+    "static/media/steak.jpg": "/BurgerApp/static/media/steak.884245d345083526bd03.jpg",
+    "static/media/sandwich.jpg": "/BurgerApp/static/media/sandwich.070d2a53863bbf2bcb1b.jpg",
+    "index.html": "/BurgerApp/index.html",
+    "main.0314d847.css.map": "/BurgerApp/static/css/main.0314d847.css.map",
+    "main.dd339ce5.js.map": "/BurgerApp/static/js/main.dd339ce5.js.map",
+    "787.28cb0dcd.chunk.js.map": "/BurgerApp/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0314d847.css",
-    "static/js/main.ea222ccc.js"
+    "static/js/main.dd339ce5.js"
   ]
 }
