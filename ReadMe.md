@@ -1,3 +1,7 @@
+
+---
+permalink: /index.html
+---
 # Burger App
 
 This project was Created with [Create React App](https://github.com/facebook/create-react-app).
