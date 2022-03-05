@@ -1,6 +1,6 @@
 
 ---
-permalink: /index.html
+permalink: /ReadMe.html
 ---
 # Burger App
 
