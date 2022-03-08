@@ -1,6 +1,7 @@
 .covimg{
     position: relative;
     width: 50%;
+
 }
 
 .covcontent{
@@ -15,6 +16,11 @@
 h1{
     color: rgb(255, 255, 255);
     font-size: 50px;
+}
+.imggg{
+  width: 100%;
+  height: 945px;
+
 }
 
 button{
@@ -36,15 +42,28 @@ button:hover{
     transform: scale(1.03);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .covimg {
-    max-width: 50%;
+    margin-left: 20%;
+    width: 20rem;
   }
   .covcontent{
     text-align: center;
-    margin-left: 350px;
+    margin-left: 200px;
+    margin-top: 500px;
+  }
+  .imggg{
+    width: 750px;
+    height: 1334px;
   }
 }
+@media only screen and (min-width: 600px) and (max-width:1000px) {
+  .covimg {
+    margin-left: 7%;
+  }
+}
+
+
 
 
 

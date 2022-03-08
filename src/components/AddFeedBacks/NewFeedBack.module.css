@@ -46,3 +46,18 @@
   .newfeedback button.alternative:active {
     background-color: rgb(8, 122, 151);
   }
+  @media only screen and (max-width: 480px) {
+    .newfeedback {
+      margin-top: 150px;
+      width: 40rem;
+      margin-left: 60px;
+      
+    }
+    .back{
+      width: 100%;
+      height: 300vh;
+        }
+  }
+  @media only screen and (min-width: 600px) and (max-width:1000px) {
+    .modal {margin-left: 7%;}
+  }

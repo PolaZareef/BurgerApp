@@ -9,7 +9,7 @@ const FeedBacksList=(props)=>{
     return (
         
         <LightSpeed left>
-        <div className={classes.feedbacks}>
+        <div className={classes.feedbacks} >
             <h2>List OF FeedBacks </h2>
             <Card >
                 {props.items.map((feedbak) => (

@@ -50,12 +50,14 @@
 
   @media only screen and (max-width: 480px) {
     .contact {
-      margin-left: 70px;
-      width: 40rem;
+      width: 50rem;
     }
     .btnn{
       margin-left: auto;
     }
+  }
+  @media only screen and (min-width: 600px) and (max-width:1000px) {
+    .summary {width: 100%;}
   }
   
 

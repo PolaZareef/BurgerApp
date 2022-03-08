@@ -4,7 +4,7 @@ import Zoom from 'react-reveal/Zoom';
 
 const CoverImage=(props)=>{
     return (
-        <div className={classes.CovImg} >
+        <div className={classes.CovImg}>
             <Zoom>
                 <div className={classes.covcontent}>
                     <h1>Welcome To Burgers APP</h1>
@@ -12,7 +12,7 @@ const CoverImage=(props)=>{
                 </div>
             </Zoom >
             <div>
-                <img src={CovImg} alt='this is cover image'/>
+                <img src={CovImg} alt='this is cover image' class="container-fluid" className={classes.imggg}/>
             </div>
         </div>
             )

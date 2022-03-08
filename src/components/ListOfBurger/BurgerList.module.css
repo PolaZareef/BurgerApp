@@ -35,16 +35,19 @@ h1{
   }
   @media only screen and (max-width: 480px) {
     .meals {
-      margin-left: 70px;
+      margin-left: 20%;
       width: 40rem;
     }
     .btnnn{
-      margin-left: 250px;
+      margin-left:120px;
     }
-  @media only screen and (max-width: 600px) {
-    .meals {margin-left: 250px;}
-    .button{margin-left: 250px;}
+  }
+  @media only screen and (min-width: 600px) and (max-width:1000px) {
+    .meals {margin-left: 5%;}
+    .btnnn{
+      margin-left:135px;
+    }
   }
   
   
-  }
+  

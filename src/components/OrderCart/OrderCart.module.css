@@ -22,4 +22,20 @@
   .bnn{
     margin-bottom: 5px;
   }
+
+  @media only screen and (max-width: 480px) {
+    .cart {
+      margin-left: 40%;
+      width: 40rem;
+    }
+    .bnn{
+      margin-left:1px;
+    }
+  }
+  @media only screen and (min-width: 600px) and (max-width:1000px) {
+    .cart {margin-left: 5%;}
+    .bnn{
+      margin-left:135px;
+    }
+  }
   

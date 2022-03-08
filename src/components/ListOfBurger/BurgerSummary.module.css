@@ -19,12 +19,12 @@
   }
   @media only screen and (max-width: 480px) {
     .summary {
-      margin-left: 70px;
+      margin-left: 20%;
       width: 40rem;
     }
   }
-  @media only screen and (max-width: 600px) {
-    .summary {margin-left: 250px;}
+  @media only screen and (min-width: 600px) and (max-width:1000px) {
+    .summary {margin-left: 7%;}
   }
 
   

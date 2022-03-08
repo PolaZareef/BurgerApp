@@ -16,7 +16,7 @@ const NewFeedBack =(props)=>{
         <div className={classes.back}>
         <LightSpeed right>
         <div className={classes.newfeedback}>
-            <NewFeedBackForm onSaveFeedBackData={FeedBackDataHandler}/>
+            <NewFeedBackForm onSaveFeedBackData={FeedBackDataHandler} />
         </div>
         </LightSpeed>
         </div>

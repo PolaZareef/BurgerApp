@@ -8,6 +8,7 @@
     color: white;
     padding: 10px;
   }
+  
   h1{
       padding-left:50px;
       font-weight: bold;
@@ -65,7 +66,31 @@
     .header {
       width: 50rem;
     }
+    h1{
+      padding-left:40px;
+    }
+    .header ul{
+      margin-top: 50px;
+      display: block;
+    }
   }
+  @media only screen and (min-width: 600px) and (max-width:1000px) {
+    .header {
+      width: 70rem;
+    }
+    h1{
+      padding-top: 30px;
+      font-size: 37px;
+    }
+    
+    
+  }
+
+  /*@media only screen and (max-width: 480px) {
+    .header {
+      width: 50rem;
+    }
+  }*/
 
   
 
