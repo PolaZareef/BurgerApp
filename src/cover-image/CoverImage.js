@@ -1,5 +1,5 @@
 import classes from './CoverImage.module.css';
-import CovImg from './blacklock_list.jpg';
+import CovImg from './burgerfullscreen.jpg';
 import Zoom from 'react-reveal/Zoom';
 
 const CoverImage=(props)=>{
