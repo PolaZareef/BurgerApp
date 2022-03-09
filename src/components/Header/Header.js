@@ -4,7 +4,7 @@ import classes from './Header.module.css';
 //import {Navbar, Nav, NavItem} from 'react-bootstrap';
 
 const Header =(props)=>{
-    const [toggleMenu, setToggleMenu] = useState(true);
+    const [toggleMenu, setToggleMenu] = useState(false);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
 
