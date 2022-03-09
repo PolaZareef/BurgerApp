@@ -11,8 +11,8 @@
   .modal {
     position: fixed;
     top: 30vh;
-    left: 10%;
-    width: 80%;
+    left: 25%;
+    width: 50%;
     z-index: 1;
     overflow: hidden;
     animation: mymove 0.4s;
