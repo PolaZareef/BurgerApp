@@ -5,6 +5,7 @@ const NewFeedBackForm=(props)=>{
     const [enteredName, setEnteredName] = useState('');
     const [enteredFeedBack, setEnteredFeedBack] = useState('');
 
+
     const NameChangeHandler=(event)=>{
         setEnteredName(event.target.value);
     };
@@ -12,6 +13,7 @@ const NewFeedBackForm=(props)=>{
     const FeedBackChangeHandler=(event)=>{
         setEnteredFeedBack(event.target.value);
     };
+    
     const submitHandler=(event)=>{
         event.preventDefault();
         if(enteredName.trim().length===0 || enteredFeedBack.trim().length===0)
@@ -29,6 +31,7 @@ const NewFeedBackForm=(props)=>{
           setEnteredFeedBack('');
     };
     return (
+        <div>
         <form onSubmit={submitHandler}>
             <div className={classes.newfeedbackcontrols}>
                 <div className={classes.newfeedbackcontrol}>
@@ -54,6 +57,8 @@ const NewFeedBackForm=(props)=>{
                 <button type='submit'>Add FeedBack</button>
             </div>
         </form>
+       
+        </div>
     )
 };
 

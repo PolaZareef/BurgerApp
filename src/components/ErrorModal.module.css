@@ -53,8 +53,8 @@
   }
   @media only screen and (max-width: 480px) {
     .modal {
-      margin-top: 150px;
-      width: 40rem;
+      margin-top: 140px;
+      width: 31rem;
     }
     .backdrop{
       width: 100%;

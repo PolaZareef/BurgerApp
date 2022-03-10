@@ -28,4 +28,8 @@
   .newfeedbackactions {
     text-align: right;
   }
- 
+  @media only screen and (max-width: 480px) {
+    .newfeedbackcontrol input  {
+      width: 37rem;
+    }
+  }

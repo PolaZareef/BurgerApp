@@ -46,6 +46,7 @@
   .newfeedback button.alternative:active {
     background-color: rgb(8, 122, 151);
   }
+  
   @media only screen and (max-width: 480px) {
     .newfeedback {
       margin-top: 150px;

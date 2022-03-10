@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NewFeedBack from '../AddFeedBacks/NewFeedBack';
+import NewFeedBack from './AddFeedBacks/NewFeedBack';
 import FeedBacksList from './FeedBacksList';
 import classes from './Total.module.css';
 const DUMMY_FEEDBACKS = [
@@ -17,7 +17,6 @@ const DUMMY_FEEDBACKS = [
 
 const TotalFeedBacks=(props)=>{
     const[hideinputFeedback,sethideinputFeedback]=useState(false);
-    const[Close,setClose]=useState(true);
 
     const [feedbacks, setFeedBacks] = useState(DUMMY_FEEDBACKS);
     const AddFeedBackHandler=(feedbak)=>{
@@ -26,16 +25,13 @@ const TotalFeedBacks=(props)=>{
         })
         sethideinputFeedback(true);
     };
-    const CloseHandler=()=>{
-        setClose(!Close);
-    };
+    
     return(
         <div>
             <div className={classes.backdropp}>
                 <div className={classes.modall}>
-                    {!hideinputFeedback  &&<NewFeedBack onAddFeedBack={AddFeedBackHandler} />}
+                    {!hideinputFeedback  &&<NewFeedBack onAddFeedBack={AddFeedBackHandler} onDoneFeed={props.onDoneFeedbak}/>}
                     {hideinputFeedback &&<FeedBacksList items={feedbacks} onDoneFeed={props.onDoneFeedbak}/>}
-                    <button className={classes.close} onClick={props.onDoneFeedbak}>X</button>
                 </div>
             </div>
         </div>
