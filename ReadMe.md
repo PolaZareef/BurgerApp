@@ -37,4 +37,4 @@ You may also see any lint errors in the console.
       `npm run build`
       `npm run deploy`
    ## Link for website Hosting:
-        [https://polazareef.github.io/BurgerApp/]
+   [https://polazareef.github.io/BurgerApp](https://polazareef.github.io/BurgerApp).
